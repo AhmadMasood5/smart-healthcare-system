@@ -1,0 +1,35 @@
+{
+  "name": "smart-healthcare-spm-server",
+  "version": "1.0.0",
+  "description": "Express + MongoDB API for the Smart Healthcare Project Management and Monitoring System",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node seed/seedDatabase.js",
+    "seed:reset": "node seed/seedDatabase.js --reset",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "mongoose": "8.9.5"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "mongodb-memory-server": "10.1.3",
+    "nodemon": "3.1.9",
+    "supertest": "7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 60000,
+    "globalSetup": "./tests/globalSetup.js",
+    "globalTeardown": "./tests/globalTeardown.js",
+    "setupFilesAfterEnv": [
+      "./tests/setupAfterEnv.js"
+    ]
+  }
+}

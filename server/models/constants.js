@@ -1,0 +1,17 @@
+module.exports = {
+  PROJECT_STATUSES: ['Planned', 'In Progress', 'Completed', 'Closed'],
+  INFLUENCE_LEVELS: ['Low', 'Medium', 'High'],
+  TEAM_ROLES: ['Project Manager', 'Backend Developer', 'Frontend Developer', 'Database Developer', 'QA Engineer'],
+  MILESTONE_STATUSES: ['Pending', 'Completed'],
+  REQUIREMENT_PRIORITIES: ['Low', 'Medium', 'High', 'Critical'],
+  APPROVAL_STATUSES: ['Pending', 'Approved', 'Rejected'],
+  REQUIREMENT_SOURCES: ['Original', 'Change Request'],
+  WBS_TYPES: ['Deliverable', 'Sub-deliverable', 'Work Package'],
+  TASK_STATUSES: ['Not Started', 'In Progress', 'Completed'],
+  DEFECT_SEVERITIES: ['Low', 'Medium', 'High', 'Critical'],
+  DEFECT_STATUSES: ['Open', 'In Progress', 'Resolved', 'Closed'],
+  INSPECTION_RESULTS: ['Not Inspected', 'Pass', 'Fail'],
+  CHECKLIST_STATUSES: ['Pending', 'Completed'],
+  RISK_PRIORITIES: ['Low', 'Medium', 'High'],
+  CLOSURE_STATUSES: ['Draft', 'Final'],
+};
